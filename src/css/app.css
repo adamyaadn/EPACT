@@ -1,0 +1,253 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+.demo-oracle-icon {
+    width:137px;
+    height:18px;
+    content:url("images/oracle_logo.svg")
+}
+
+html:not([dir="rtl"]) .demo-oracle-icon {
+    padding-right:4px
+}
+
+html[dir="rtl"] .demo-oracle-icon {
+    padding-left:4px
+}
+
+.demo-oracle-icon:before {
+    display:inline
+}
+
+.demo-appheader-avatar {
+    width:24px;
+    height:24px
+}
+
+.demo-appheader-avatar:before {
+    content:url("images/avatar_24px.png")
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .demo-appheader-avatar:before {
+        content:url("images/avatar_24px_2x.png");
+        -webkit-transform:translate(-25%, -25%) scale(0.5);
+        transform:translate(-25%, -25%) scale(0.5)
+    }
+}
+
+
+/* General Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Adjust height as needed */
+  }
+  
+  .login-form-container {
+    width: 100%;
+    max-width: 400px;
+    /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Add spacing between buttons */
+    margin-top: 20px;
+  }
+  
+  .login-button {
+    background-color: #007bff;
+    /* Default button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+  }
+  
+  .facebook-button {
+    background-color: #1877f2;
+  }
+  
+  .facebook-button:hover {
+    background-color: #1265e1;
+  }
+  
+  .google-button {
+    background-color: #db4437;
+  }
+  
+  .google-button:hover {
+    background-color: #c5372b;
+  }
+  
+  .logout-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .logout-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #495057;
+  }
+  
+  .button-text {
+    display: inline-block;
+  }
+  
+  /* Error Styling (Example - You'll need to add error display logic in JS) */
+  .input-group.error input {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Make it full viewport height */
+  }
+  
+  .dashboard-header,
+  .dashboard-footer {
+    height: 60px;
+    /* Adjust header and footer height as needed */
+    background-color: #f0f0f0;
+    /* Light background */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .search-inputs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .search-button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-button img {
+    width: 20px;
+    /* Adjust icon size */
+  }
+  
+  .data-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .data-item {
+    text-align: center;
+  }
+  
+  .data-label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .data-value {
+    font-size: 1.2em;
+  }
